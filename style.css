@@ -1,0 +1,617 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Estilos para el primer header */
+#main-header {
+    position: relative; /* Permite la colocación de elementos absolutos */
+    height: 37.5rem; /* Aumenta la altura del encabezado */
+    overflow: hidden; /* Evita desbordamientos */
+}
+
+#main-header .background {
+    background-image: url('Imagenes/Prueba.jpg'); 
+    background-size: cover; /* La imagen cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    height: 100%; /* Ocupa toda la altura del header */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    z-index: 1; /* Fondo debajo de otros elementos */
+}
+
+#main-header .overlay-header {
+    background-color: rgba(80, 80, 80, 0.493); /* Color vino con opacidad */
+    position: absolute; /* También en posición absoluta */
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    z-index: 2; /* Encima de la imagen */
+}
+
+#main-header .content {
+    position: relative; /* Contenido en relación al header */
+    z-index: 3; /* Asegura que el texto esté visible */
+    color: #fcfcfc; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 50px 0; /* Espaciado alrededor del texto */
+}
+
+/* Estilos para el segundo header */
+#welcome-header {
+    position: relative;
+    height: 34rem;
+    overflow: hidden;
+}
+
+#welcome-header .background-2 {
+    background-image: url('Imagenes/Prueba.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    z-index: 1;
+}
+
+#welcome-header .overlay-2 {
+    background: linear-gradient(to right, rgba(248, 244, 244, 0.8), rgba(255, 255, 255, 0));
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    z-index: 2;
+}
+
+#welcome-header .content-2 {
+    position: relative; /* Contenido en relación al header */
+    z-index: 3; /* Asegura que el texto esté visible */
+    color: #000; /* Color del texto */
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: flex-start; /* Alinea a la izquierda */
+    justify-content: flex-start; /* Cambiado para alinear al principio */
+    height: 100%; /* Asegura que ocupe toda la altura disponible */
+    padding: 50px 20px; /* Espaciado alrededor del texto */
+    text-align: left; /* Alinea el texto a la izquierda */
+    max-width: 50%; /* Limita el ancho a menos de la mitad */
+}
+
+#welcome-header .content-2 h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+#welcome-header .content-2 p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 1200px) {
+    #welcome-header .content-2 {
+        max-width: 70%;
+    }
+
+    #welcome-header .content-2 h1 {
+        font-size: 2.2em;
+    }
+
+    #welcome-header .content-2 p {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 992px) {
+    #welcome-header {
+        height: 30rem;
+    }
+
+    #welcome-header .content-2 {
+        max-width: 80%;
+    }
+
+    #welcome-header .content-2 h1 {
+        font-size: 2em;
+    }
+
+    #welcome-header .content-2 p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    #welcome-header {
+        height: 25rem;
+    }
+
+    #welcome-header .content-2 {
+        max-width: 90%;
+    }
+
+    #welcome-header .content-2 h1 {
+        font-size: 1.8em;
+    }
+
+    #welcome-header .content-2 p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 576px) {
+    #welcome-header {
+        height: 20rem;
+    }
+
+    #welcome-header .content-2 {
+        padding: 10px; /* Ajusta el padding */
+    }
+
+    #welcome-header .content-2 h1 {
+        font-size: 1.5em;
+    }
+
+    #welcome-header .content-2 p {
+        font-size: 0.8em;
+    }
+}
+
+
+
+nav.arriba {
+    background-color: rgba(255, 255, 255, 0); /* Fondo transparente */
+    padding: 20px;
+    margin-top: -40px; /* Ajusta este valor para mover la barra hacia arriba */
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Asegúrate de que esté encima de otros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Agrega sombra para efecto de profundidad */
+}
+
+ul {
+    list-style-type: none;
+    text-align: right;
+    margin-right: 3rem;
+}
+
+/*elementos de la lista del menu*/
+li {
+    display: inline;
+    margin-right: 30px; /* Espacio entre elementos del menú */
+}
+
+
+a {
+    text-decoration: none;
+    color: #ffffff; /* Color del texto del menú */
+    font-weight: bold;
+}
+
+.white-text {
+    color: white;
+}
+
+/* Cambia el color del enlace cuando se pasa el mouse por encima */
+a:hover {
+    color: #ffffff; /* Cambia el color al pasar el mouse por encima */
+}
+
+header img {
+    max-width: 100%;
+    height: auto; /* Cambia la altura a auto para mantener la proporción */
+    object-fit: cover;
+}
+
+
+nav {
+    background-color: #7d5825;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+
+.presentation {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.presentation img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/*VIDEO*/
+.video-container {
+    max-width: 800px; /* ajusta el ancho máximo del contenedor del video */
+    margin: 40px auto; /* agrega un margen superior e inferior de 40px y centra el contenedor */
+    background-color: #f7f7f7; /* agrega un fondo claro al contenedor */
+    padding: 20px; /* agrega un padding de 20px al contenedor */
+    border: 1px solid #ddd; /* agrega un borde delgado al contenedor */
+    border-radius: 10px; /* agrega un radio de curvatura al contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* agrega una sombra leve al contenedor */
+}
+
+.video-container video {
+    width: 100%; /* ajusta el ancho del video al 100% del contenedor */
+    height: 400px; /* ajusta el alto del video a 300px */
+    object-fit: cover; /* ajusta el tamaño del video para que se adapte al contenedor */
+    border-radius: 10px; /* agrega un radio de curvatura al video */
+}
+
+.video-container center {
+    display: flex; /* centra el video horizontalmente */
+    justify-content: center; /* centra el video horizontalmente */
+}
+
+/*Prueba de departamento*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-md-4 {
+    width: 33.33%;
+    padding: 10px;
+}
+
+.card {
+    position: relative; /* Necesario para la superposición */
+    border-radius: 10px;
+    overflow: hidden; /* Para que no se salga el contenido */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px; /* Mantiene el borde redondeado */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(125, 88, 37, 0.7), rgba(125, 88, 37, 0.7));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card:hover .overlay {
+    opacity: 1; /* Muestra el texto al pasar el mouse */
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px; /* Espaciado interno */
+}
+
+
+/*Fonde de todo*/
+.presentation img {
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.Text {
+    flex: 1; /* Para que el texto ocupe el espacio restante */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    header {
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Secciones (cada cuadrito)*/
+section {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/*Calendario*/
+h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+
+
+/*Prueba dezplazamiento*/
+/* Estilos generales para el contenedor del calendario */
+#calendar {
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    padding: 20px; /* Añade un poco de espacio alrededor del contenido */
+}
+
+/* Estilos para el formulario de reservas */
+#reservation-form {
+    display: flex; /* Cambiar a flex para facilitar el diseño responsivo */
+    flex-wrap: wrap; /* Permitir que las secciones se ajusten en múltiples líneas */
+    justify-content: space-between; /* Espacio entre las secciones */
+}
+
+/* Estilos para cada sección del formulario */
+#reservation-form section {
+    flex: 1 1 300px; /* Flexibilidad con un ancho mínimo */
+    margin: 10px; /* Margen entre las secciones */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los botones */
+.button-container {
+    width: 100%; /* Asegura que el contenedor del botón ocupe todo el ancho */
+    text-align: center; /* Centra el botón horizontalmente */
+    margin-top: 20px; /* Añade un margen superior para separar el botón de las tablas */
+}
+
+/* Estilos para los botones de envío */
+button[type="submit"] {
+    padding: 15px 30px;
+    border-radius: 25px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efectos de hover y active para los botones */
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+button[type="submit"]:active {
+    background-color: #004494;
+    transform: scale(1);
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 600px) {
+    #reservation-form {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: center; /* Centrar elementos en la columna */
+    }
+
+    #reservation-form section {
+        width: 90%; /* Secciones más amplias en pantallas pequeñas */
+    }
+
+    button[type="submit"] {
+        width: 90%; /* Botones más anchos en pantallas pequeñas */
+        font-size: 1em; /* Ajustar el tamaño de fuente */
+    }
+}
+
+/*Galeria*/
+#availability {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container-2 {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 10px; /* Reduce el padding lateral */
+}
+
+.slider-2 {
+    position: relative;
+    height: auto;
+    width: 32%; /* Ajustamos para que entren 3 sliders en pantallas grandes */
+    max-width: 370px; /* Reduce ligeramente el ancho máximo */
+    margin: 0 5px; /* Reduce el margen horizontal */
+    overflow: hidden;
+    border: 5px solid transparent; /* Reduce el borde para minimizar la separación */
+}
+
+.sliders-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centramos los sliders en la fila */
+    gap: 10px; /* Pequeño espacio entre los sliders */
+}
+
+.overlay-gallery {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+    z-index: 2;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    z-index: 3;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    line-height: 1.5;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.slider-2 ul {
+    position: relative;
+    z-index: 1;
+    width: 500%;
+    display: flex;
+    padding: 0;
+    animation: cambio 15s infinite alternate linear;
+}
+
+.slider-2 ul li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider-2 img {
+    height: auto;
+    width: 100%;
+    max-height: 370px; /* Reduce la altura máxima de las imágenes */
+    object-fit: cover;
+    z-index: 0;
+}
+
+@keyframes cambio {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+}
+
+/* Media Queries para pantallas medianas */
+@media (max-width: 1024px) {
+    .slider-2 {
+        width: 48%; /* Dos sliders por fila en pantallas medianas */
+    }
+
+    .text-overlay {
+        font-size: 1.5em; /* Reduce el tamaño del texto */
+    }
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .slider-2 {
+        width: 100%; /* Un slider por fila en pantallas pequeñas */
+        margin-bottom: 20px;
+    }
+
+    .text-overlay {
+        font-size: 1.2em; /* Reduce aún más el tamaño del texto */
+    }
+
+    .slider-2 img {
+        max-height: 300px; /* Reduce el tamaño máximo de las imágenes en pantallas pequeñas */
+    }
+}
+
+/* Media Queries para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+    .text-overlay {
+        font-size: 1em; /* Ajuste para pantallas muy pequeñas */
+    }
+
+    .slider-2 img {
+        max-height: 250px; /* Ajusta la altura de la imagen para móviles */
+    }
+}
+
+/*Footer*/
+footer {
+    background-color: #352503;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer li {
+    color: white;
+}
+
+footer span {
+    color: white !important; /* Forzar el color blanco */
+    font-weight: bold; /* Opcional: para destacar más el texto */
+}
+
+h2 {
+    color: #281D10;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .departments div {
+        width: 100%;
+    }
+
+    .gallery img {
+        max-width: 100%;
+    }
+}
