@@ -13,7 +13,7 @@ body {
 }
 
 #main-header .background {
-    background-image: url('Prueba.jpg'); 
+    background-image: url('Imagenes/Prueba.jpg'); 
     background-size: cover; /* La imagen cubre todo el fondo */
     background-position: center; /* Centra la imagen */
     height: 100%; /* Ocupa toda la altura del header */
@@ -51,7 +51,7 @@ body {
 }
 
 #welcome-header .background-2 {
-    background-image: url('Prueba.jpg');
+    background-image: url('Imagenes/Prueba.jpg');
     background-size: cover;
     background-position: center;
     height: 100%;

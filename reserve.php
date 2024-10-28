@@ -118,7 +118,7 @@ $conn->close();
 <div class="video-container">
     <center>
     <video width="600" height="300" controls>
-        <source src="Video_mamalon_english.mp4" type="video/mp4">
+        <source src="Imagenes/Video_mamalon_english.mp4" type="video/mp4">
     </video>
     </center>
 </div>
@@ -129,7 +129,7 @@ $conn->close();
     <div class="row">
         <div class="col-md-4">
             <div class="card">
-                <img src="Presentacion8.jpg" alt="Imagen 1" class="card-img-top">
+                <img src="Imagenes/Presentacion8.jpg" alt="Imagen 1" class="card-img-top">
                 <div class="overlay">
                     <div class="card-title"><h1>Reception</h1>Personalized attention 24 hours a day.</div>
                 </div>
@@ -137,7 +137,7 @@ $conn->close();
         </div>
         <div class="col-md-4">
             <div class="card">
-                <img src="Presentacion2.jpg" alt="Imagen 2" class="card-img-top">
+                <img src="Imagenes/Presentacion2.jpg" alt="Imagen 2" class="card-img-top">
                 <div class="overlay">
                     <div class="card-title"><h1>Restaurant</h1>Gourmet cuisine with international dishes.</div>
                 </div>
@@ -145,7 +145,7 @@ $conn->close();
         </div>
         <div class="col-md-4">
             <div class="card">
-                <img src="Presentacion3.jpg" alt="Imagen 3" class="card-img-top">
+                <img src="Imagenes/Presentacion3.jpg" alt="Imagen 3" class="card-img-top">
                 <div class="overlay">
                     <div class="card-title"><h1>Rooms</h1>Comfort and elegance in every room.</div>
                 </div>
@@ -153,7 +153,7 @@ $conn->close();
         </div>
         <div class="col-md-4">
             <div class="card">
-                <img src="Presentacion5(1).jpg" alt="Imagen 4" class="card-img-top">
+                <img src="Imagenes/Presentacion5(1).jpg" alt="Imagen 4" class="card-img-top">
                 <div class="overlay">
                     <div class="card-title"><h1>Spa</h1>Relax in our luxury spa.</div>
                 </div>
@@ -161,7 +161,7 @@ $conn->close();
         </div>
         <div class="col-md-4">
             <div class="card">
-                <img src="Presentacion4.jpg" alt="Imagen 5" class="card-img-top">
+                <img src="Imagenes/Presentacion4.jpg" alt="Imagen 5" class="card-img-top">
                 <div class="overlay">
                     <div class="card-title"><h1>Gym</h1>Modern facilities to keep fit.</div>
                 </div>
@@ -169,7 +169,7 @@ $conn->close();
         </div>
         <div class="col-md-4">
             <div class="card">
-                <img src="Presentacion10(1).jpg" alt="Imagen 6" class="card-img-top">
+                <img src="Imagenes/Presentacion10(1).jpg" alt="Imagen 6" class="card-img-top">
                 <div class="overlay">
                     <div class="card-title"><h1>Meeting room</h1>Enjoy a safe and quiet environment.</div>
                 </div>
@@ -190,11 +190,11 @@ $conn->close();
                     of the hotel<br>
                 </div>
                 <ul>
-                    <li class="slider___item"><img src="Exterior1.png" alt=""></li>
-                    <li class="slider___item"><img src="Exterior2.png" alt=""></li>
-                    <li class="slider___item"><img src="Exterior3.png" alt=""></li>
-                    <li class="slider___item"><img src="Exterior4.png" alt=""></li>
-                    <li class="slider___item"><img src="Exterior5.png" alt=""></li>
+                    <li class="slider___item"><img src="Imagenes/Exterior1.png" alt=""></li>
+                    <li class="slider___item"><img src="Imagenes/Exterior2.png" alt=""></li>
+                    <li class="slider___item"><img src="Imagenes/Exterior3.png" alt=""></li>
+                    <li class="slider___item"><img src="Imagenes/Exterior4.png" alt=""></li>
+                    <li class="slider___item"><img src="Imagenes/Exterior5.png" alt=""></li>
                 </ul>
             </div>
             <div class="slider-2">
@@ -203,22 +203,22 @@ $conn->close();
                     Interior<br>
                     of the hotel</div>
                 <ul>
-                    <li class="slider___item"><img src="Interior1.png" alt=""></li>
-                    <li class="slider___item"><img src="Interior2.png" alt=""></li>
-                    <li class="slider___item"><img src="Interior3.png" alt=""></li>
-                    <li class="slider___item"><img src="Interior4.png" alt=""></li>
-                    <li class="slider___item"><img src="Interior5.png" alt=""></li>
+                    <li class="slider___item"><img src="Imagenes/Interior1.png" alt=""></li>
+                    <li class="slider___item"><img src="Imagenes/Interior2.png" alt=""></li>
+                    <li class="slider___item"><img src="Imagenes/Interior3.png" alt=""></li>
+                    <li class="slider___item"><img src="Imagenes/Interior4.png" alt=""></li>
+                    <li class="slider___item"><img src="Imagenes/Interior5.png" alt=""></li>
                 </ul>
             </div>
             <div class="slider-2">
                 <div class="overlay-gallery"></div>
                 <div class="text-overlay">Hotel Pool</div>
                 <ul>
-                    <li class="slider___item"><img src="Piscina1.png" alt=""></li>
-                    <li class="slider___item"><img src="Piscina2.png" alt=""></li>
-                    <li class="slider___item"><img src="Piscina3.png" alt=""></li>
-                    <li class="slider___item"><img src="Piscina4.png" alt=""></li>
-                    <li class="slider___item"><img src="Piscina5.png" alt=""></li>
+                    <li class="slider___item"><img src="Imagenes/Piscina1.png" alt=""></li>
+                    <li class="slider___item"><img src="Imagenes/Piscina2.png" alt=""></li>
+                    <li class="slider___item"><img src="Imagenes/Piscina3.png" alt=""></li>
+                    <li class="slider___item"><img src="Imagenes/Piscina4.png" alt=""></li>
+                    <li class="slider___item"><img src="Imagenes/Piscina5.png" alt=""></li>
                 </ul>
             </div>
         </div>
