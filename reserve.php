@@ -79,7 +79,7 @@ $conn->close();
     <div class="content">
         <nav class="arriba">    
             <ul>
-                <li><a href="index.html"><i>Spanish</i></a></li> 
+                <li><a href="Index.html"><i>Spanish</i></a></li> 
             </ul>
         </nav>
         <br><br><br><br><br>
